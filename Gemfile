@@ -8,6 +8,7 @@ gem 'autoprefixer-rails'
 group :assets do
 	gem 'twitter-bootstrap-rails'
 end
+gem 'rails_12factor', group: :production
 gem "font-awesome-rails"
 gem "slim-rails"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
