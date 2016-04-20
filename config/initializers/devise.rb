@@ -25,8 +25,8 @@ Devise.setup do |config|
   require 'omniauth-facebook'
 
   config.omniauth_path_prefix = "/users/auth"
-  config.secret_key = 'e36268e44d59a3e580f553c09068b487955ba4c913748c28e8e5b14ec7c1931d494248bd68ad8897236253fbb3b135d557d7d3c35c6e6f5c02db2a472d03e2d3'
-  config.omniauth :facebook, '1102951866431287', '7642cd04e4b5ad49f34f600bbe5e1f80', scope:'email', access_type: 'offline', approval_prompt: '', client_options: {:ssl => {:ca_file => '/usr/lib/ssl/certs/ca-certificates.crt'}} 
+  config.secret_key = "e36268e44d59a3e580f553c09068b487955ba4c913748c28e8e5b14ec7c1931d494248bd68ad8897236253fbb3b135d557d7d3c35c6e6f5c02db2a472d03e2d3"
+  config.omniauth :facebook, 1102951866431287, '7642cd04e4b5ad49f34f600bbe5e1f80', scope:'email'
   config.mailer_sender = 'sparshsamir1993@gmail.com'
   # ==> Configuration for any authentication mechanism
   # Configure which keys are used when authenticating a user. The default is
