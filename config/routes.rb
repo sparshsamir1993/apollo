@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   #match '/auth/failure', :to => 'sessions#failure' ,via: [:get, :post, :create]
   #resources :bookings
   #devise_for :users
+  get 'visitors/chairmanmessage'
+  get 'visitors/keycontacts' 
   devise_scope :users do
     
     resources :bookings
