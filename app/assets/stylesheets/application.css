@@ -18,3 +18,7 @@
 */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+#fbbuttons {
+	color: white;
+	
+}
