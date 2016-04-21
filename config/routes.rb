@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   #resources :bookings
   #devise_for :users
   get 'visitors/chairmanmessage'
-  get 'visitors/keycontacts' 
+  get 'visitors/keycontacts'
+  get 'visitors/contactus' 
   devise_scope :users do
     
     resources :bookings
