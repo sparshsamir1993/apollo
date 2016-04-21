@@ -5,14 +5,15 @@ Rails.application.routes.draw do
   #match '/auth/failure', :to => 'sessions#failure' ,via: [:get, :post, :create]
   #resources :bookings
   #devise_for :users
-  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" } do
-    
-  end
-
   devise_scope :users do
     
     resources :bookings
   end
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" } do
+    
+  end
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

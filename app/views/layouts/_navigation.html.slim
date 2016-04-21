@@ -43,4 +43,4 @@ nav.navbar.navbar-inverse
             strong= current_user.name
           = link_to "Sign out", signout_path, id: "sign_out"
         - else
-          = link_to "Sign in with Facebook",user_facebook_omniauth_callback_path
+          = link_to "Sign in with Facebook",user_facebook_omniauth_authorize_path
